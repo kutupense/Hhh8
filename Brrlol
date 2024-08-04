@@ -31,77 +31,77 @@ StatsSection:AddButton({
 })
 
 StatsSection:AddButton({
-    Title = "+100 Break Level 🦴",
+    Title = "+1000 Break Level 🦴",
     Callback = function()
         local args = {
             [1] = "breakslevel",
-            [2] = 100
+            [2] = 1000
         }
         game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
     end
 })
 
 StatsSection:AddButton({
-    Title = "+100 Sprains Level 💔",
+    Title = "+1000 Sprains Level 💔",
     Callback = function()
         local args = {
             [1] = "sprainslevel",
-            [2] = 100
+            [2] = 1000
         }
         game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
     end
 })
 
 StatsSection:AddButton({
-    Title = "+100 Dislocations Level 📻",
+    Title = "+1000 Dislocations Level 📻",
     Callback = function()
         local args = {
             [1] = "dislocationslevel",
-            [2] = 100
+            [2] = 1000
         }
         game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
     end
 })
 
 StatsSection:AddButton({
-    Title = "+100 Bounce Level ⚽️",
+    Title = "+1000 Bounce Level ⚽️",
     Callback = function()
         local args = {
             [1] = "elasticitylevel",
-            [2] = 100
+            [2] = 1000
         }
         game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
     end
 })
 
 StatsSection:AddButton({
-    Title = "+100 Flight Control Level ✈️",
+    Title = "+1000 Flight Control Level ✈️",
     Callback = function()
         local args = {
             [1] = "flightlevel",
-            [2] = 100
+            [2] = 1000
         }
         game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
     end
 })
 
 StatsSection:AddButton({
-    Title = "+100 Slide Level 🛝",
+    Title = "+1000 Slide Level 🛝",
     Callback = function()
         local args = {
             [1] = "frictionlevel",
-            [2] = 100
+            [2] = 1000
         }
         game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
     end
 })
 
 StatsSection:AddButton({
-    Title = "+100 Pack Cooldown Level",
+    Title = "+1000 Pack Cooldown Level",
     Callback = function()
         local args = {
             [1] = "cooldownlevel",
-            [2] = 100
+            [2] = 1000
         }
         game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
     end
