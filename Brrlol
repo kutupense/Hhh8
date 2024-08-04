@@ -20,11 +20,11 @@ local StatsSection = StatsTab:AddSection("Stats Section")
 
 StatsSection:AddButton({
     Title = "+100b Money 💸",
-    Description = "Set Stats:Money to 100b",
+    Description = "Set Stats:Money to 100t",
     Callback = function()
         local args = {
             [1] = "money",
-            [2] = 1000000000
+            [2] = 100000000000000000000000000
         }
         game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
     end
