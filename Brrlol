@@ -1,0 +1,116 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "🌌 Galaxy Hub",
+    SubTitle = "Broken Bones IV",
+    TabWidth = 130,
+    Size = UDim2.fromOffset(480, 360),
+    Theme = "Amethyst",
+    MinimizeKey = Enum.KeyCode.LeftControl
+})
+
+local StatsTab = Window:AddTab({ Title = "Stats", Icon = "book" })
+
+StatsTab:AddParagraph({
+    Title = "Details ℹ️",
+    Content = "When you use a button,it will not work or show in the game \nRejoin to see results."
+})
+
+local StatsSection = StatsTab:AddSection("Stats Section")
+
+StatsSection:AddButton({
+    Title = "+100b Money 💸",
+    Description = "Set Stats:Money to 100b",
+    Callback = function()
+        local args = {
+            [1] = "money",
+            [2] = 1000000000
+        }
+        game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
+    end
+})
+
+StatsSection:AddButton({
+    Title = "+100 Break Level 🦴",
+    Callback = function()
+        local args = {
+            [1] = "breakslevel",
+            [2] = 100
+        }
+        game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
+    end
+})
+
+StatsSection:AddButton({
+    Title = "+100 Sprains Level 💔",
+    Callback = function()
+        local args = {
+            [1] = "sprainslevel",
+            [2] = 100
+        }
+        game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
+    end
+})
+
+StatsSection:AddButton({
+    Title = "+100 Dislocations Level 📻",
+    Callback = function()
+        local args = {
+            [1] = "dislocationslevel",
+            [2] = 100
+        }
+        game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
+    end
+})
+
+StatsSection:AddButton({
+    Title = "+100 Bounce Level ⚽️",
+    Callback = function()
+        local args = {
+            [1] = "elasticitylevel",
+            [2] = 100
+        }
+        game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
+    end
+})
+
+StatsSection:AddButton({
+    Title = "+100 Flight Control Level ✈️",
+    Callback = function()
+        local args = {
+            [1] = "flightlevel",
+            [2] = 100
+        }
+        game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
+    end
+})
+
+StatsSection:AddButton({
+    Title = "+100 Slide Level 🛝",
+    Callback = function()
+        local args = {
+            [1] = "frictionlevel",
+            [2] = 100
+        }
+        game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
+    end
+})
+
+StatsSection:AddButton({
+    Title = "+100 Pack Cooldown Level",
+    Callback = function()
+        local args = {
+            [1] = "cooldownlevel",
+            [2] = 100
+        }
+        game:GetService("ReplicatedStorage").Functions.UpdateStat:InvokeServer(unpack(args))
+    end
+})
+
+Window:SelectTab(1)
+
+Fluent:Notify({
+    Title = "Galaxy Hub",
+    Content = "The script has been loaded.",
+    Duration = 8
+})
